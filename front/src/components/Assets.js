@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState} from "react";
 import API from "../api";
 import { usePDF } from 'react-to-pdf';
 import './Assets.css';
