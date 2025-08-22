@@ -37,9 +37,15 @@ app.use("/api/transfers", transferRoutes);
 app.use("/api/auth", authRoutes);
 
 // Connect MongoDB
+console.log("Attempting to connect to MongoDB...");
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("✅ MongoDB Connected"))
-.catch((err) => console.error("❌ MongoDB Connection Error:", err));
+.catch((err) => {
+    console.error("❌ MongoDB Connection Error Details:");
+    console.error("Error name:", err.name);
+    console.error("Error message:", err.message);
+    console.error("Full error:", err);
+});
 
 // Simple test route
 app.get("/", (req, res) => {
