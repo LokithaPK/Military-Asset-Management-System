@@ -11,12 +11,10 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production' 
-        ? ['https://mams-frontend.netlify.app', 'http://localhost:3000']
-        : 'http://localhost:3000',
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+  origin: "https://mams-frontend.netlify.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
 }));
 app.use(express.json());
 
