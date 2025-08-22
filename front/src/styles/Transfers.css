@@ -1,0 +1,146 @@
+.transfers-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.transfers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.transfers-title {
+  color: #1a237e;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.transfer-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: #1a237e;
+  outline: none;
+}
+
+.form-submit {
+  background: #1a237e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: fit-content;
+}
+
+.form-submit:hover {
+  background: #283593;
+}
+
+.transfers-history {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-title {
+  color: #1a237e;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.transfers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transfer-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.transfer-item:last-child {
+  border-bottom: none;
+}
+
+.transfer-item:hover {
+  background: #f8f9fa;
+}
+
+.transfer-asset {
+  font-weight: 500;
+  color: #1a237e;
+}
+
+.transfer-quantity {
+  text-align: center;
+  font-weight: 500;
+}
+
+.transfer-base {
+  color: #666;
+}
+
+.transfer-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.transfer-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-completed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-pending {
+  background: #fff3e0;
+  color: #ef6c00;
+}

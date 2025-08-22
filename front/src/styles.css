@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a, .navbar button {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+form input, form select, form button {
+  margin: 5px 0;
+  padding: 8px;
+}
+.metrics {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card {
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.actions button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: #555;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+.popup-content button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #222;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #555;
+  color: white;
+}

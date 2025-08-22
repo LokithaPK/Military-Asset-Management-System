@@ -1,0 +1,76 @@
+.purchases-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.purchases-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.purchase-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.purchases-list {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.purchases-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.purchases-table th,
+.purchases-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.purchases-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #1a237e;
+}
+
+.purchases-table tr:hover {
+  background: #f5f6ff;
+}
+
+.purchase-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.quantity-cell {
+  font-weight: 600;
+  color: #1a237e;
+}
+
+.base-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #e3f2fd;
+  color: #1565c0;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
